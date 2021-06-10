@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner,#rules,#game{
+    background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+    background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+#banner h1{
+    font-size: 100px;
+    padding: 10px;
+}
+#banner a,#game a{
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(238.72deg, #FF0000 0%, #56124F 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-blend-mode: hard-light, color-burn, color-dodge, normal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+    transition: all 1s ease;
+}
+#banner a:hover,#game a:hover{
+  transform: scale(1.08);
+}
+#rules{
+    background: linear-gradient(301.28deg, #00C2FF 54.38%, rgba(0, 255, 224, 0) 100%), linear-gradient(129.96deg, #FF2F2F 10.43%, #000460 92.78%), radial-gradient(100% 246.94% at 100% 0%, #8000FF 0%, #BA75FF 54.17%, #FF0000 100%), linear-gradient(58.72deg, #2200F2 0%, #530000 100%), linear-gradient(154.03deg, #FF0000 0%, #00FF94 74.04%), linear-gradient(301.27deg, #FF0000 0%, #0038FF 84.63%), linear-gradient(136.23deg, #00C2FF 11.12%, #FF0000 86.47%), radial-gradient(57.37% 100% at 50% 0%, #B50000 0%, #0034BB 100%);
+    background-blend-mode: multiply, overlay, color-burn, screen, difference, difference, difference, normal;
+}
+#game{
+  background: linear-gradient(58.72deg, #FF20DB 0%, #FFFFFF 100%), linear-gradient(180deg, #FFFFFF 0%, #060046 100%), linear-gradient(64.82deg, #AD00FF 0%, #FF0000 100%), linear-gradient(307.27deg, #FF9900 0.37%, #150052 100%), radial-gradient(67.08% 100% at 50% 0%, #76005C 0%, #0500FF 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.09);
+  }
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa-bolt{
+      color: #00069F;
+  }
+  .card__title {
+    grid-row: 3/4;
+    text-align: center;
+    color: black;
+  }
+  .card12{
+      grid-row: 4/5;
+  }
+  .card-1 {
+    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
+  }
+  
+  .card-2 {
+    background: radial-gradient(80.99% 100% at 50% 0%, #00FF0A 0%, #36008E 100%), radial-gradient(50% 123.47% at 50% 50%, #EFE7C8 0%, #36008E 100%), linear-gradient(301.28deg, #FF006B 0%, #48DD9E 100%), linear-gradient(294.84deg, #5A60E4 0%, #D30000 100%), linear-gradient(52.29deg, #000000 0%, #00FF85 100%), radial-gradient(100% 138.69% at 100% 0%, #0007A5 0%, #FF7A00 100%), radial-gradient(70.41% 100% at 50% 0%, #D5B300 0%, #2200AA 100%);
+    background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
+  }
+.card12 a{
+  text-decoration: none;
+  padding: 15px;
+}
+.card12 a:hover{
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+}
+#game{
+  text-align: center;
+}
+#game h2{
+  color: red;
+  font-size: 35px;
+}
+#game h1{
+  color: black;
+}
+#game input{
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+}
+#game button{
+  padding: 5px;
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+#easy,#hard,#game{
+  display: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a740978d7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="banner">
+        <h1>GUESS THE NUMBER</h1>
+        <h2>Find Magician Secret Number</h2>
+        <a href="#rules">Play</a>
+    </div>
+    <div id="rules">
+        <div class="card-container">
+            <div class="card card-1">
+              <div class="card__icon"><i class="fas fa-bolt"></i></div>
+              <h2 class="card__title">Guess the secret number in the magician's hat. If your guess is high or low, you'll get a hint.</h2>
+              <h2 class="card__title card12">Enter your number and click to guess.</h2>
+            </div>
+            <div class="card card-2">
+              <div class="card__icon"><i class="fas fa-bolt"></i></div>
+              <h2 class="card__title">Choose Difficulty Level</h2>
+              <h2 class="card__title card12">
+                  <a href="#game" onclick="showeasy()">EASY</a>
+                  <a href="#game" onclick="showhard()">HARD</a>
+              </h2>
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="easy">
+            <h2 id="currentturn">Turn 2</h2>
+            <h2 id="result">Your guess,5,is low.</h2>
+            <h1>Pick a number between 1-10.</h1>
+            <h1 id="turns">You will have 5 Turns.</h1>
+            <div>
+                <input type="text">
+                <button>Guess?</button>
+            </div>
+        </div>
+        <div id="hard">
+            <h2 id="currentturn">Turn 2</h2>
+            <h2 id="result">Your guess,5,is low.</h2>
+            <h1>Pick a number between 1-100.</h1>
+            <h1 id="turns">You will have 8 Turns.</h1>
+            <div>
+                <input type="text">
+                <button>Guess?</button>
+            </div>
+        </div>
+        <a href="#rules" onclick="playagain()">Play Again</a>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
